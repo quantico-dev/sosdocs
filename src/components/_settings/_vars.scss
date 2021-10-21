@@ -1,0 +1,109 @@
+:root {
+  /*
+    * =>> Colors
+  */
+  --primary100: #90a2fa;
+  --primary200: #667ff9;
+  --primary300: #3c5bf7;
+  --primary400: #1238f5;
+  --primary500: #092ad3;
+  --primary600: #0722a8;
+  --primary700: #05197e;
+  --primary800: #041154;
+  --primary900: #02082a;
+
+  --secondary100: #b4b9d7;
+  --secondary200: #979fc8;
+  --secondary300: #7a85b9;
+  --secondary400: #5d6aaa;
+  --secondary500: #4c5790;
+  --secondary600: #3d4673;
+  --secondary700: #2d3456;
+  --secondary800: #1e2339;
+  --secondary900: #0f111d;
+
+  --warning100: #fefae9;
+  --warning200: #fcf0b5;
+  --warning300: #f9e581;
+  --warning400: #f7db4d;
+  --warning500: #f5d019;
+  --warning600: #cfae09;
+  --warning700: #9b8307;
+  --warning800: #685705;
+  --warning900: #342c02;
+
+  --success100: #9bfa88;
+  --success200: #78f85f;
+  --success300: #56f635;
+  --success400: #33f50c;
+  --success500: #2acd09;
+  --success600: #21a407;
+  --success700: #197b05;
+  --success800: #115204;
+  --success900: #082902;
+
+  --danger100: #fa889b;
+  --danger200: #f85f78;
+  --danger300: #f63556;
+  --danger400: #f50c33;
+  --danger500: #cd092a;
+  --danger600: #a40721;
+  --danger700: #7b0519;
+  --danger800: #520411;
+  --danger900: #290208;
+
+  --light400: #888fb0;
+  --light300: #a7acc5;
+  --light200: #c7cad9;
+  --light100: #e6e7ee;
+  --white: #fff;
+  --white80: rgba(255, 255, 255, 0.8);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white40: rgba(255, 255, 255, 0.4);
+  --white20: rgba(255, 255, 255, 0.2);
+  --white10: rgba(255, 255, 255, 0.1);
+  --black10: rgba(0, 0, 0, 0.1);
+  --black20: rgba(0, 0, 0, 0.2);
+  --black40: rgba(0, 0, 0, 0.4);
+  --black60: rgba(0, 0, 0, 0.6);
+  --black80: rgba(0, 0, 0, 0.8);
+  --black: #000;
+  --dark400: #15171f;
+  --dark300: #2a2d3e;
+  --dark200: #3e445e;
+  --dark100: #535a7d;
+
+  /*
+    * =>> Typography
+  */
+  --root-size: 16px;
+
+  --font-normal: 300;
+  --font-bold: 500;
+
+  --base-color: var(--light-300);
+  --primary-font: 'Cera Pro', sans-serif;
+
+  --font-size-1: 1rem;
+  --font-size-2: min(calc(1.275rem + 0.3vw), 1.5rem);
+  --font-size-3: min(calc(1.325rem + 0.9vw), 2rem);
+  --font-size-4: min(calc(1.375rem + 1.5vw), 2.5rem);
+  --font-size-5: min(calc(1.425rem + 2.1vw), 3rem);
+  --font-size-6: min(calc(1.475rem + 2.7vw), 3.5rem);
+  --font-size-7: min(calc(1.525rem + 3.3vw), 4rem);
+  --font-size-8: min(calc(1.575rem + 3.9vw), 4.5rem);
+  --font-size-9: min(calc(1.625rem + 4.5vw), 5rem);
+
+  /*
+    * =>> Spacing & Sizing
+  */
+  --max-width: min(100%, 1440px);
+
+  /*
+    * =>> Breaking Points
+  */
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1200px;
+  --xxl: 1366px;
+}

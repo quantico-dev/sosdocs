@@ -1,0 +1,346 @@
+/*
+  * =>> Fonts
+*/
+@font-face {
+  font-family: "Cera Pro";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/CeraPro-Light.woff2") format("woff2"), url("/fonts/CeraPro-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cera Pro";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/CeraPro-Medium.woff2") format("woff2"), url("/fonts/CeraPro-Medium.ttf") format("truetype");
+}
+:root {
+  /*
+    * =>> Colors
+  */
+  --primary100: #90a2fa;
+  --primary200: #667ff9;
+  --primary300: #3c5bf7;
+  --primary400: #1238f5;
+  --primary500: #092ad3;
+  --primary600: #0722a8;
+  --primary700: #05197e;
+  --primary800: #041154;
+  --primary900: #02082a;
+  --secondary100: #b4b9d7;
+  --secondary200: #979fc8;
+  --secondary300: #7a85b9;
+  --secondary400: #5d6aaa;
+  --secondary500: #4c5790;
+  --secondary600: #3d4673;
+  --secondary700: #2d3456;
+  --secondary800: #1e2339;
+  --secondary900: #0f111d;
+  --warning100: #fefae9;
+  --warning200: #fcf0b5;
+  --warning300: #f9e581;
+  --warning400: #f7db4d;
+  --warning500: #f5d019;
+  --warning600: #cfae09;
+  --warning700: #9b8307;
+  --warning800: #685705;
+  --warning900: #342c02;
+  --success100: #9bfa88;
+  --success200: #78f85f;
+  --success300: #56f635;
+  --success400: #33f50c;
+  --success500: #2acd09;
+  --success600: #21a407;
+  --success700: #197b05;
+  --success800: #115204;
+  --success900: #082902;
+  --danger100: #fa889b;
+  --danger200: #f85f78;
+  --danger300: #f63556;
+  --danger400: #f50c33;
+  --danger500: #cd092a;
+  --danger600: #a40721;
+  --danger700: #7b0519;
+  --danger800: #520411;
+  --danger900: #290208;
+  --light400: #888fb0;
+  --light300: #a7acc5;
+  --light200: #c7cad9;
+  --light100: #e6e7ee;
+  --white: #fff;
+  --white80: rgba(255, 255, 255, 0.8);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white40: rgba(255, 255, 255, 0.4);
+  --white20: rgba(255, 255, 255, 0.2);
+  --white10: rgba(255, 255, 255, 0.1);
+  --black10: rgba(0, 0, 0, 0.1);
+  --black20: rgba(0, 0, 0, 0.2);
+  --black40: rgba(0, 0, 0, 0.4);
+  --black60: rgba(0, 0, 0, 0.6);
+  --black80: rgba(0, 0, 0, 0.8);
+  --black: #000;
+  --dark400: #15171f;
+  --dark300: #2a2d3e;
+  --dark200: #3e445e;
+  --dark100: #535a7d;
+  /*
+    * =>> Typography
+  */
+  --root-size: 16px;
+  --font-normal: 300;
+  --font-bold: 500;
+  --base-color: var(--light-300);
+  --primary-font: "Cera Pro", sans-serif;
+  --font-size-1: 1rem;
+  --font-size-2: min(calc(1.275rem + 0.3vw), 1.5rem);
+  --font-size-3: min(calc(1.325rem + 0.9vw), 2rem);
+  --font-size-4: min(calc(1.375rem + 1.5vw), 2.5rem);
+  --font-size-5: min(calc(1.425rem + 2.1vw), 3rem);
+  --font-size-6: min(calc(1.475rem + 2.7vw), 3.5rem);
+  --font-size-7: min(calc(1.525rem + 3.3vw), 4rem);
+  --font-size-8: min(calc(1.575rem + 3.9vw), 4.5rem);
+  --font-size-9: min(calc(1.625rem + 4.5vw), 5rem);
+  /*
+    * =>> Spacing & Sizing
+  */
+  --max-width: min(100%, 1440px);
+  /*
+    * =>> Breaking Points
+  */
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1200px;
+  --xxl: 1366px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--base-color);
+  font: normal normal var(--font-normal) var(--root-size)/1.15 var(--primary-font);
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-bold);
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: var(--font-bold);
+}
+
+em {
+  font-style: normal;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+#nprogress .bar {
+  background: #29d;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=bootstrap.css.map */

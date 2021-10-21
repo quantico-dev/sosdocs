@@ -1,0 +1,134 @@
+@for $i from 1 through 9 {
+  .fontSize#{$i} {
+    font-size: var(--font-size-#{$i});
+  }
+}
+
+.fontWeight--bold {
+  font-weight: var(--font-bold) !important;
+}
+.fontWeight--normal {
+  font-weight: var(--font-normal) !important;
+}
+
+@each $val in 100, 80, 60, 40, 20, 10 {
+  .color--white#{$val} {
+    @extend %textWhite;
+    color: var(--white-#{$val});
+  }
+}
+
+@each $val in 100, 80, 60, 40, 20, 10 {
+  .color--black#{$val} {
+    color: var(--white-#{$val});
+  }
+}
+
+.Grid--align {
+  &Top {
+    align-items: flex-start;
+  }
+  &Left {
+    justify-content: flex-start;
+  }
+  &Right {
+    justify-content: flex-end;
+  }
+  &Center {
+    justify-content: center;
+  }
+  &Middle {
+    align-items: center;
+  }
+  &Bottom {
+    align-items: flex-end;
+  }
+  &Md {
+    @media (min-width: 768px) {
+      &Top {
+        align-items: flex-start;
+      }
+      &Left {
+        justify-content: flex-start;
+      }
+      &Right {
+        justify-content: flex-end;
+      }
+      &Center {
+        justify-content: center;
+      }
+      &Middle {
+        align-items: center;
+      }
+      &Bottom {
+        align-items: flex-end;
+      }
+    }
+  }
+  &Lg {
+    @media (min-width: 1024px) {
+      &Top {
+        align-items: flex-start;
+      }
+      &Left {
+        justify-content: flex-start;
+      }
+      &Right {
+        justify-content: flex-end;
+      }
+      &Center {
+        justify-content: center;
+      }
+      &Middle {
+        align-items: center;
+      }
+      &Bottom {
+        align-items: flex-end;
+      }
+    }
+  }
+  &Xl {
+    @media (min-width: 1200px) {
+      &Top {
+        align-items: flex-start;
+      }
+      &Left {
+        justify-content: flex-start;
+      }
+      &Right {
+        justify-content: flex-end;
+      }
+      &Center {
+        justify-content: center;
+      }
+      &Middle {
+        align-items: center;
+      }
+      &Bottom {
+        align-items: flex-end;
+      }
+    }
+  }
+  &Xxl {
+    @media (min-width: 1366px) {
+      &Top {
+        align-items: flex-start;
+      }
+      &Left {
+        justify-content: flex-start;
+      }
+      &Right {
+        justify-content: flex-end;
+      }
+      &Center {
+        justify-content: center;
+      }
+      &Middle {
+        align-items: center;
+      }
+      &Bottom {
+        align-items: flex-end;
+      }
+    }
+  }
+}
