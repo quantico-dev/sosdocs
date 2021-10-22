@@ -168,7 +168,7 @@ export default function Home() {
           <Row className={styles[`pains__heading`]}>
             <Column>
               <Dots />
-              <Title size="6" color="light">
+              <Title size="5" color="light">
                 Os riscos de não ter um sistema de{' '}
                 <em>gestão de documentos:</em>
               </Title>
