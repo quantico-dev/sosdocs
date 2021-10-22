@@ -29,6 +29,7 @@ import { Column, Row, Wrapper } from '@/components/atoms/Grid'
 import { Dots } from '@/components/atoms/Icons'
 import * as PainIcon from '@/components/atoms/PainIcons'
 import { Text, Title } from '@/components/atoms/Typography'
+import { Cta } from '@/components/molecules/Cta'
 import { Preload } from '@/components/molecules/Preload'
 import { Testimonials } from '@/components/molecules/Testimonials'
 import { Page } from '@/components/organisms/Page'
@@ -344,6 +345,8 @@ export default function Home() {
       </Container>
 
       <Testimonials />
+
+      <Cta />
     </Page>
   )
 }

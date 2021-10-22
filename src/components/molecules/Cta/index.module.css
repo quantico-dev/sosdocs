@@ -1,5 +1,12 @@
-.backgorund {
+.background {
   background: no-repeat center center/cover url("/images/bg-dots.jpg");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=index.module.css.map */

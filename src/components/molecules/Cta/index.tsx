@@ -7,8 +7,8 @@ import styles from './index.module.css'
 
 export function Cta() {
   return (
-    <Container className={styles.background}>
-      <Wrapper>
+    <Container>
+      <Wrapper className={styles.background}>
         <Title color="light" className={styles.title}>
           Entre em contato conosco e saiba como a SOS Docs pode ajudar seu
           negócio.
