@@ -62,6 +62,16 @@
 .about__heading svg {
   margin-bottom: 0.5rem;
 }
+@media (min-width: 768px) {
+  .about__heading {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .about__description {
+    align-items: center;
+  }
+}
 .about__description > div:nth-child(1) {
   width: 80%;
   height: 300px;
@@ -70,8 +80,25 @@
 .about__description > div:nth-child(1) > div > img {
   border-radius: 12px;
 }
+@media (min-width: 768px) {
+  .about__description > div:nth-child(1) {
+    width: 42%;
+    height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .about__description > div:nth-child(2) {
+    width: 58%;
+    padding: 4rem;
+  }
+}
 .about__description > div:nth-child(2) > h2 {
   margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .about__description > div:nth-child(2) > h2 {
+    margin-top: 0;
+  }
 }
 .about__description > div:nth-child(2) > h3 {
   margin: 1rem 0;
@@ -92,13 +119,24 @@
 .pains__heading p {
   margin-bottom: 3rem;
 }
+@media (min-width: 768px) {
+  .pains__cards {
+    gap: 1rem 0;
+  }
+}
 .pains__cards > div {
+  width: 100%;
   text-align: center;
   padding: 4rem 4rem 4rem;
   border-radius: 16px;
 }
+@media (min-width: 768px) {
+  .pains__cards > div {
+    width: 50%;
+  }
+}
 .pains__cards > div:nth-child(2n) {
-  background-color: var(--primary300);
+  background-color: var(--white10);
 }
 
 .solutions {
@@ -110,6 +148,11 @@
 .solutions__item {
   margin: 4rem 0;
 }
+@media (min-width: 768px) {
+  .solutions__item {
+    align-items: center;
+  }
+}
 .solutions__item > div:nth-child(1) {
   height: 250px;
   margin-bottom: 1rem;
@@ -117,8 +160,19 @@
 .solutions__item > div:nth-child(1) > div > img {
   border-radius: 16px;
 }
+@media (min-width: 768px) {
+  .solutions__item > div:nth-child(1) {
+    width: 50%;
+    height: 300px;
+  }
+}
 .solutions__item > div:nth-child(2) svg {
   margin: 1rem 0 0.5rem;
+}
+@media (min-width: 768px) {
+  .solutions__item > div:nth-child(2) svg {
+    margin: 0 0 0.5rem;
+  }
 }
 .solutions__item > div:nth-child(2) h3 {
   margin-bottom: 1rem;
@@ -126,11 +180,21 @@
 .solutions__item > div:nth-child(2) p {
   margin-bottom: 1.5rem;
 }
+@media (min-width: 768px) {
+  .solutions__item > div:nth-child(2) {
+    width: 50%;
+    padding: 2rem;
+  }
+}
 
 .cta {
   background: no-repeat center center/cover url("/images/woman-typing-mobile.jpg");
   padding: 11rem 4rem 3rem;
-  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  .cta {
+    padding: 11rem 6rem 3rem;
+  }
 }
 .cta__heading {
   margin: 0.5rem 0 1rem;

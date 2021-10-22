@@ -128,12 +128,9 @@ export default function Home() {
           <Row className={styles[`about__heading`]}>
             <Column>
               <Dots />
-              <Title size="6">
-                <small>
-                  <em>Com mais de 10 anos de experiência</em> e tecnologia,
-                  possuímos estruturas, sistemas e equipes altamente
-                  capacitadas.
-                </small>
+              <Title size="4">
+                <em>Com mais de 10 anos de experiência</em> e tecnologia,
+                possuímos estruturas, sistemas e equipes altamente capacitadas.
               </Title>
             </Column>
           </Row>
@@ -331,7 +328,7 @@ export default function Home() {
 
       <Container>
         <Wrapper>
-          <Box className={styles[`cta`]}>
+          <Box borderRadius="16" className={styles[`cta`]}>
             <Dots />
             <Title color="light" className={styles[`cta__heading`]}>
               Conheça as nossas soluções para o seu negócio

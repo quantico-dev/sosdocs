@@ -48,11 +48,12 @@ export function Row({
 }: RowProps) {
   return (
     <div
-      className={`
-        ${styles[`flexRow--${reversed ? 'reverse' : ''}`]}
-        ${className}
-      `}
-      style={style}
+      className={`${className}`}
+      style={{
+        display: 'flex',
+        flexDirection: `row${reversed ? '-reverse' : ''}`,
+        flexWrap: 'wrap',
+      }}
     >
       {children}
     </div>
