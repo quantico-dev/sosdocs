@@ -1,0 +1,38 @@
+.shadow {
+  &--none {
+    box-shadow: none;
+  }
+
+  &--small {
+    box-shadow: 0px 13.9417px 26.8876px -6.97086px var(--black40);
+  }
+
+  &--medium {
+    box-shadow: 0px 31px 41px -17px var(--black40);
+  }
+
+  &--large {
+    box-shadow: 0px 25px 31px -7px var(--black40);
+  }
+}
+
+.borderRadius {
+  &--0 {
+    border-radius: 0;
+  }
+  &--8 {
+    border-radius: 8px;
+  }
+  &--12 {
+    border-radius: 12px;
+  }
+  &--16 {
+    border-radius: 16px;
+  }
+  &--24 {
+    border-radius: 24px;
+  }
+  &--32 {
+    border-radius: 32px;
+  }
+}

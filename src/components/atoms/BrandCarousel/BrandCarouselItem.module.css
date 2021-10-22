@@ -1,0 +1,19 @@
+.item {
+  width: 180px;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--white20);
+  animation: translateinfinite 45s linear infinite;
+}
+
+@keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-180px * 13));
+  }
+}
+
+/*# sourceMappingURL=BrandCarouselItem.module.css.map */

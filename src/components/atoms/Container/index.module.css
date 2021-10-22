@@ -1,0 +1,97 @@
+.background--gradient100, .background--secondary900, .background--secondary800, .background--secondary700, .background--secondary600, .background--secondary500, .background--secondary400, .background--secondary300, .background--secondary200, .background--secondary100, .background--primary900, .background--primary800, .background--primary700, .background--primary600, .background--primary500, .background--primary400, .background--primary300, .background--primary200, .background--primary100, .background--dark400, .background--dark300, .background--dark200, .background--dark100, .background--light400, .background--light300, .background--light200, .background--light100, .background--black, .background--white {
+  display: flex;
+  justify-content: center;
+}
+.background--gradient100 > div, .background--secondary900 > div, .background--secondary800 > div, .background--secondary700 > div, .background--secondary600 > div, .background--secondary500 > div, .background--secondary400 > div, .background--secondary300 > div, .background--secondary200 > div, .background--secondary100 > div, .background--primary900 > div, .background--primary800 > div, .background--primary700 > div, .background--primary600 > div, .background--primary500 > div, .background--primary400 > div, .background--primary300 > div, .background--primary200 > div, .background--primary100 > div, .background--dark400 > div, .background--dark300 > div, .background--dark200 > div, .background--dark100 > div, .background--light400 > div, .background--light300 > div, .background--light200 > div, .background--light100 > div, .background--black > div, .background--white > div {
+  width: var(--max-width);
+}
+
+.background--white {
+  background-color: var(--white);
+}
+.background--black {
+  background-color: var(--black);
+}
+.background--light100 {
+  background-color: var(--light100);
+}
+.background--light200 {
+  background-color: var(--light200);
+}
+.background--light300 {
+  background-color: var(--light300);
+}
+.background--light400 {
+  background-color: var(--light400);
+}
+.background--dark100 {
+  background-color: var(--dark100);
+}
+.background--dark200 {
+  background-color: var(--dark200);
+}
+.background--dark300 {
+  background-color: var(--dark300);
+}
+.background--dark400 {
+  background-color: var(--dark400);
+}
+.background--primary100 {
+  background-color: var(--primary100);
+}
+.background--primary200 {
+  background-color: var(--primary200);
+}
+.background--primary300 {
+  background-color: var(--primary300);
+}
+.background--primary400 {
+  background-color: var(--primary400);
+}
+.background--primary500 {
+  background-color: var(--primary500);
+}
+.background--primary600 {
+  background-color: var(--primary600);
+}
+.background--primary700 {
+  background-color: var(--primary700);
+}
+.background--primary800 {
+  background-color: var(--primary800);
+}
+.background--primary900 {
+  background-color: var(--primary900);
+}
+.background--secondary100 {
+  background-color: var(--secondary100);
+}
+.background--secondary200 {
+  background-color: var(--secondary200);
+}
+.background--secondary300 {
+  background-color: var(--secondary300);
+}
+.background--secondary400 {
+  background-color: var(--secondary400);
+}
+.background--secondary500 {
+  background-color: var(--secondary500);
+}
+.background--secondary600 {
+  background-color: var(--secondary600);
+}
+.background--secondary700 {
+  background-color: var(--secondary700);
+}
+.background--secondary800 {
+  background-color: var(--secondary800);
+}
+.background--secondary900 {
+  background-color: var(--secondary900);
+}
+.background--gradient100 {
+  background: linear-gradient(45deg, var(--primary500), var(--primary800));
+}
+
+/*# sourceMappingURL=index.module.css.map */

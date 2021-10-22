@@ -22,15 +22,13 @@
   --secondary800: #1e2339;
   --secondary900: #0f111d;
 
-  --warning100: #fefae9;
-  --warning200: #fcf0b5;
-  --warning300: #f9e581;
-  --warning400: #f7db4d;
-  --warning500: #f5d019;
-  --warning600: #cfae09;
-  --warning700: #9b8307;
-  --warning800: #685705;
-  --warning900: #342c02;
+  --warning100: #ffecb5;
+  --warning200: #fedc77;
+  --warning300: #fecd39;
+  --warning400: #f8ba01;
+  --warning500: #ba8c01;
+  --warning600: #7c5d01;
+  --warning700: #3e2f00;
 
   --success100: #9bfa88;
   --success200: #78f85f;
@@ -99,6 +97,14 @@
   */
   --max-width: min(100%, 1440px);
 
+  --button-border-size: 2px;
+  --button-border-radius: 50rem;
+
+  --button-large-padding: 1rem 2.5rem;
+  --button-large-font-size: 1.1rem;
+
+  --button-small-padding: 0.625rem 1.125rem;
+  --button-small-font-size: 1rem;
   /*
     * =>> Breaking Points
   */

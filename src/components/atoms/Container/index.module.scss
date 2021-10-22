@@ -1,0 +1,41 @@
+%background {
+  display: flex;
+  justify-content: center;
+  & > div {
+    width: var(--max-width);
+  }
+}
+
+.background {
+  @each $val in 'white', 'black' {
+    &--#{$val} {
+      @extend %background;
+      background-color: var(--#{$val});
+    }
+  }
+  @each $val in 'light', 'dark' {
+    &--#{$val} {
+      @for $i from 1 through 4 {
+        &#{$i * 100} {
+          @extend %background;
+          background-color: var(--#{$val}#{$i * 100});
+        }
+      }
+    }
+  }
+  @each $val in 'primary', 'secondary' {
+    &--#{$val} {
+      @for $i from 1 through 9 {
+        &#{$i * 100} {
+          @extend %background;
+          background-color: var(--#{$val}#{$i * 100});
+        }
+      }
+    }
+  }
+
+  &--gradient100 {
+    @extend %background;
+    background: linear-gradient(45deg, var(--primary500), var(--primary800));
+  }
+}

@@ -1,0 +1,66 @@
+.padding--tiny {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+@media (min-width: 768px) {
+  .padding--tiny {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .padding--tiny {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+.padding--small {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+@media (min-width: 768px) {
+  .padding--small {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .padding--small {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.padding--medium {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .padding--medium {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .padding--medium {
+    padding-left: 6.6rem;
+    padding-right: 6.6rem;
+  }
+}
+.padding--large {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media (min-width: 768px) {
+  .padding--large {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .padding--large {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+/*# sourceMappingURL=Wrapper.module.css.map */

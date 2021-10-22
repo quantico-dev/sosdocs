@@ -1,0 +1,18 @@
+.light {
+  color: var(--white);
+  em {
+    color: var(--warning400);
+  }
+}
+
+.dark {
+  color: var(--primary800);
+  em {
+    color: var(--primary400);
+  }
+}
+
+.decorator {
+  border-left: 4px solid var(--warning400);
+  padding-left: 1rem;
+}

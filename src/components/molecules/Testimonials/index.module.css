@@ -1,0 +1,87 @@
+.testimonials {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.testimonials > h2 {
+  margin: 1rem 0 1.4rem;
+}
+@media (min-width: 515px) {
+  .testimonials > h2 {
+    width: 80%;
+  }
+}
+@media (min-width: 740px) {
+  .testimonials > h2 {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonials > h2 {
+    width: 60%;
+  }
+}
+.testimonials > p {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.testimonials > p:nth-child(3) {
+  height: 240px;
+}
+@media (min-width: 375px) {
+  .testimonials > p:nth-child(3) {
+    height: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .testimonials > p:nth-child(3) {
+    height: 100px;
+  }
+}
+.testimonials > p:nth-child(4) {
+  height: 20px;
+}
+@media (min-width: 768px) {
+  .testimonials > p {
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonials > p {
+    width: 75%;
+  }
+}
+@media (min-width: 1440px) {
+  .testimonials > p {
+    width: 60%;
+  }
+}
+.testimonials > div {
+  margin-top: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+@media (min-width: 768px) {
+  .testimonials > div {
+    justify-content: space-between;
+  }
+}
+.testimonials > div .brands {
+  display: flex;
+  gap: 0 2rem;
+}
+.testimonials > div .brands img {
+  opacity: 0.3;
+  transition: opacity 1s ease;
+}
+.testimonials > div .brands img.active {
+  opacity: 1;
+}
+.testimonials > div .controls {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0 0.7rem;
+}
+
+/*# sourceMappingURL=index.module.css.map */

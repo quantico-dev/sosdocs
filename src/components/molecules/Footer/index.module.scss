@@ -1,0 +1,88 @@
+.wrapper {
+  padding-top: 4.25rem;
+  padding-bottom: 3.75rem;
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    gap: 0 3rem;
+  }
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .social {
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      width: auto;
+    }
+    & > div {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .menu,
+  .contact,
+  .cta {
+    margin-top: 2rem;
+    @media (min-width: 1024px) {
+      margin-top: 0rem;
+    }
+    & > *:first-child {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: auto;
+      text-align: left;
+    }
+    & > ul {
+      list-style: none;
+    }
+  }
+
+  .contact {
+    width: 100%;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: auto;
+      text-align: left;
+    }
+    & > div {
+      & > p:first-child {
+        margin: 1.1rem 0 0.35rem;
+      }
+    }
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: auto;
+      text-align: left;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 3.625rem;
+  padding-top: 2.687rem;
+  text-align: center;
+  border-top: 1px solid var(--white-20);
+}

@@ -1,0 +1,12 @@
+.wrapper {
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  color: var(--white);
+}
+
+/*# sourceMappingURL=index.module.css.map */

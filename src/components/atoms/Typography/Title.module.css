@@ -1,0 +1,20 @@
+.light {
+  color: var(--white);
+}
+.light em {
+  color: var(--warning400);
+}
+
+.dark {
+  color: var(--primary800);
+}
+.dark em {
+  color: var(--primary400);
+}
+
+.decorator {
+  border-left: 4px solid var(--warning400);
+  padding-left: 1rem;
+}
+
+/*# sourceMappingURL=Title.module.css.map */

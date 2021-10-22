@@ -1,6 +1,12 @@
 @for $i from 1 through 9 {
-  .fontSize#{$i} {
-    font-size: var(--font-size-#{$i});
+  .fontSize--#{$i} {
+    font-size: var(--font-size-#{$i}) !important;
+  }
+}
+
+@for $i from 1 through 9 {
+  .iconSize--#{$i} {
+    width: var(--font-size-#{$i}) !important;
   }
 }
 
@@ -11,123 +17,151 @@
   font-weight: var(--font-normal) !important;
 }
 
+.textTransform {
+  &--normal {
+    text-transform: none !important;
+  }
+  &--uppercase {
+    text-transform: uppercase !important;
+  }
+  &--lowercase {
+    text-transform: lowercase !important;
+  }
+  &--capitalize {
+    text-transform: capitalize !important;
+  }
+}
+
 @each $val in 100, 80, 60, 40, 20, 10 {
   .color--white#{$val} {
-    @extend %textWhite;
-    color: var(--white-#{$val});
+    color: var(--white-#{$val}) !important;
   }
 }
 
 @each $val in 100, 80, 60, 40, 20, 10 {
   .color--black#{$val} {
-    color: var(--white-#{$val});
+    color: var(--white-#{$val}) !important;
   }
+}
+
+%flex {
+  display: flex !important;
+}
+
+.flexRow {
+  @extend %flex;
+  flex-flow: row wrap !important;
+}
+
+.flexRow--reverse {
+  @extend %flex;
+  flex-flow: row-reverse wrap !important;
 }
 
 .Grid--align {
   &Top {
-    align-items: flex-start;
+    align-items: flex-start !important;
   }
   &Left {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
   }
   &Right {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
   }
   &Center {
-    justify-content: center;
+    justify-content: center !important;
   }
   &Middle {
-    align-items: center;
+    align-items: center !important;
   }
   &Bottom {
-    align-items: flex-end;
+    align-items: flex-end !important;
   }
   &Md {
     @media (min-width: 768px) {
       &Top {
-        align-items: flex-start;
+        align-items: flex-start !important;
       }
       &Left {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
       }
       &Right {
-        justify-content: flex-end;
+        justify-content: flex-end !important;
       }
       &Center {
-        justify-content: center;
+        justify-content: center !important;
       }
       &Middle {
-        align-items: center;
+        align-items: center !important;
       }
       &Bottom {
-        align-items: flex-end;
+        align-items: flex-end !important;
       }
     }
   }
   &Lg {
     @media (min-width: 1024px) {
       &Top {
-        align-items: flex-start;
+        align-items: flex-start !important;
       }
       &Left {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
       }
       &Right {
-        justify-content: flex-end;
+        justify-content: flex-end !important;
       }
       &Center {
-        justify-content: center;
+        justify-content: center !important;
       }
       &Middle {
-        align-items: center;
+        align-items: center !important;
       }
       &Bottom {
-        align-items: flex-end;
+        align-items: flex-end !important;
       }
     }
   }
   &Xl {
     @media (min-width: 1200px) {
       &Top {
-        align-items: flex-start;
+        align-items: flex-start !important;
       }
       &Left {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
       }
       &Right {
-        justify-content: flex-end;
+        justify-content: flex-end !important;
       }
       &Center {
-        justify-content: center;
+        justify-content: center !important;
       }
       &Middle {
-        align-items: center;
+        align-items: center !important;
       }
       &Bottom {
-        align-items: flex-end;
+        align-items: flex-end !important;
       }
     }
   }
   &Xxl {
     @media (min-width: 1366px) {
       &Top {
-        align-items: flex-start;
+        align-items: flex-start !important;
       }
       &Left {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
       }
       &Right {
-        justify-content: flex-end;
+        justify-content: flex-end !important;
       }
       &Center {
-        justify-content: center;
+        justify-content: center !important;
       }
       &Middle {
-        align-items: center;
+        align-items: center !important;
       }
       &Bottom {
-        align-items: flex-end;
+        align-items: flex-end !important;
       }
     }
   }

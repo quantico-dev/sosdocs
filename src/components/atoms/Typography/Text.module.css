@@ -1,0 +1,13 @@
+.light {
+  color: var(--white);
+}
+
+.medium {
+  color: var(--secondary200);
+}
+
+.dark {
+  color: var(--secondary500);
+}
+
+/*# sourceMappingURL=Text.module.css.map */

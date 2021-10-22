@@ -1,0 +1,33 @@
+.open {
+  width: 200px;
+  padding: 1rem;
+
+  position: absolute;
+  left: 0;
+  top: 40px;
+  z-index: 900;
+
+  background-color: var(--white);
+  color: var(--black);
+
+  list-style: none;
+}
+
+.close {
+  display: none;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  z-index: 9;
+  transform: translateX(-50%);
+
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid var(--white);
+}

@@ -1,3 +1,159 @@
-export default function Home() {
-  return <h1>Home</h1>
+.cover {
+  &__background {
+    padding: 1rem 0 3rem;
+    background: no-repeat center top / cover url('/images/bg-couple-mobile.png');
+    @media (min-width: 992px) {
+      background-image: url('/images/bg-couple.png');
+    }
+    @media (min-width: 1440px) {
+      margin: 3rem 0;
+      border-radius: 25px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 1rem 0 2rem;
+    }
+  }
+  &__cta {
+    text-align: center;
+    width: 100%;
+    padding-top: 13rem;
+    padding-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      width: 70%;
+      padding-top: 10rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 57%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 65%;
+    }
+
+    @media (min-width: 1366px) {
+      width: 57%;
+    }
+
+    a {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__carousel {
+    margin-bottom: 2rem;
+  }
+}
+
+.about {
+  padding: 3rem 0;
+  &__heading {
+    margin-bottom: 2rem;
+    text-align: center;
+    svg {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__description {
+    & > div {
+      &:nth-child(1) {
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        & > div > img {
+          border-radius: 12px;
+        }
+      }
+      &:nth-child(2) {
+        & > h2 {
+          margin-top: 3rem;
+        }
+        & > h3 {
+          margin: 1rem 0;
+        }
+        & > p {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.pains {
+  padding: 3rem 0;
+  &__heading {
+    svg {
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+  &__cards {
+    & > div {
+      text-align: center;
+      padding: 4rem 4rem 4rem;
+      border-radius: 16px;
+      &:nth-child(2n) {
+        background-color: var(--primary300);
+      }
+    }
+  }
+}
+
+.solutions {
+  padding: 3rem 0 1rem;
+  &__heading {
+    & > div > h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  &__item {
+    margin: 4rem 0;
+
+    & > div {
+      &:nth-child(1) {
+        height: 250px;
+        margin-bottom: 1rem;
+        & > div > img {
+          border-radius: 16px;
+        }
+      }
+
+      &:nth-child(2) {
+        svg {
+          margin: 1rem 0 0.5rem;
+        }
+
+        h3 {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.cta {
+  background: no-repeat center center / cover
+    url('/images/woman-typing-mobile.jpg');
+
+  padding: 11rem 4rem 3rem;
+  border-radius: 16px;
+  &__heading {
+    margin: 0.5rem 0 1rem;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+  }
 }

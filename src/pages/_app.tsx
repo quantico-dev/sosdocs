@@ -8,6 +8,12 @@ Router.events.on('routeChangeStart', () => nProgress.start())
 Router.events.on('routeChangeError', () => nProgress.done())
 Router.events.on('routeChangeComplete', () => nProgress.done())
 
+import { Translation } from '@/utils/contexts/TranslationContext'
+
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <Translation>
+      <Component {...pageProps} />
+    </Translation>
+  )
 }
